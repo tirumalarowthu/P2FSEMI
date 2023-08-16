@@ -1,0 +1,199 @@
+     html {
+       scroll-behavior: smooth;
+     }
+
+     .animateHeader {
+       animation: sdb05 1.8s;
+       box-shadow: 20px 0px 10px 4px #0a0a0a8c;
+     }
+
+     .empty-feedback,
+     .invalid-feedback {
+       display: none;
+     }
+
+     @keyframes sdb05 {
+       0% {
+         transform: translateY(-60px);
+       }
+
+       100% {
+         transform: translateY(0);
+       }
+     }
+
+     /*nav bar styles*/
+     .navbar-nav {
+       margin-left: auto;
+       /* Pushes the right-aligned items to the right */
+     }
+
+     #navbarNav {
+       font-family: sans-serif, 'Times New Roman', Times, serif;
+     }
+
+     .navbar-nav li:hover {
+       /* border: 2px solid green; */
+       box-shadow: 1px 1px 1px green;
+       border-radius: 5px 5px 0px 0px;
+     }
+
+     .navbar-nav .nav-item {
+       margin-right: 20px;
+       /* Adjust spacing as needed */
+     }
+
+     .navbar-nav .nav-item:last-child {
+       margin-right: 0;
+       /* No margin for the last item */
+     }
+
+
+     /* navbar styles ended here */
+     .slider_img {
+       height: 80vh;
+       /* object-fit: cover; */
+     }
+
+     .video_div {
+       margin: 0px auto;
+       width: 80%;
+     }
+
+     .video {
+       border: 2px solid black;
+       border-radius: 20px;
+       margin: 0px auto;
+     }
+
+     .kvideo {
+       border-radius: 30px;
+       border: 2px solid black;
+       overflow: hidden;
+     }
+
+     .carousel_caption h1,
+     p {
+       color: white;
+     }
+
+     .carousel_caption h1 {
+       font-size: 50px;
+     }
+
+     body {
+       background-color: #efefef;
+     }
+
+     #marquee {
+       white-space: nowrap;
+       overflow: hidden;
+       animation: marquee 10s linear infinite;
+     }
+
+     @keyframes marquee {
+       0% {
+         left: 0;
+       }
+
+       100% {
+         left: -100vw;
+       }
+     }
+
+     /* styles for content scroll */
+     #marquee h2 {
+       color: green;
+     }
+
+     /* contact us styles starts here */
+     .chat-icon {
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+       cursor: pointer;
+       z-index: 1000;
+     }
+
+     .chat-container {
+       position: fixed;
+       bottom: 20px;
+       right: 20px;
+       width: 300px;
+       height: 400px;
+       background-color: #fff;
+       border-radius: 8px;
+       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+       z-index: 999;
+       display: none;
+     }
+
+     .chat-header {
+       background-color: #f8f9fa;
+       padding: 10px;
+       border-bottom: 1px solid #e9ecef;
+       border-top-left-radius: 8px;
+       border-top-right-radius: 8px;
+     }
+
+     .chat-body {
+       padding: 15px;
+       height: 80%;
+       overflow-y: auto;
+     }
+
+     .chat-footer {
+       padding: 10px;
+       border-top: 1px solid #e9ecef;
+     }
+
+     /* contact us styles ends here */
+     /* team starts here */
+     #myCarousel {
+      margin-top: 50px;
+  }
+  
+  @media (max-width: 768px) {
+      .carousel-inner .carousel-item>div {
+          display: none;
+      }
+  
+      .carousel-inner .carousel-item>div:first-child {
+          display: block;
+      }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-start,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+      display: flex;
+  }
+  
+  @media (min-width: 768px) {
+  
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-item-next:not(.carousel-item-start) {
+          transform: translateX(25%) !important;
+      }
+  
+      .carousel-inner .carousel-item-left.active,
+      .carousel-item-prev:not(.carousel-item-end),
+      .active.carousel-item-start,
+      .carousel-item-prev:not(.carousel-item-end) {
+          transform: translateX(-25%) !important;
+      }
+  
+      .carousel-item-next.carousel-item-start,
+      .active.carousel-item-end {
+          transform: translateX(0) !important;
+      }
+  
+      .carousel-inner .carousel-item-prev,
+      .carousel-item-prev:not(.carousel-item-end) {
+          transform: translateX(-25%) !important;
+      }
+  }
+
+  /* Team ends here */
